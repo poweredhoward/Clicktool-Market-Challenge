@@ -14,6 +14,9 @@ app.use(bodyParser.json());
 const routes = require("./routes/api.js");
 app.use(routes);
 
+app.use(express.static("images"));
+
+
 // require("./routes/api.js")(app);
 
 db.sequelize.sync({ force: false }).then(function() {

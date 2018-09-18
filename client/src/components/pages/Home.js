@@ -10,6 +10,12 @@ class Home extends React.Component{
         allitems: []
     }
 
+    styling={
+        maxWidth: "300px",
+        maxHeight: "300px"
+
+    }
+
     componentDidMount =() =>{
         axios.get("/api/all/items").then( items => {
             console.log(items);
@@ -42,6 +48,8 @@ class Home extends React.Component{
                             <h4>{item.name}</h4>
                             <p>Description: {item.description}</p>
                             <p>${item.price}</p>
+                            <img style={this.styling} src={item.image} />
+                            <br />
                             
                             <Link to={this.params(item)} 
                             // item={item}

@@ -18,6 +18,11 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.FLOAT,
             allowNull: false
 
+        },
+        //path to saved image, should be in /images
+        image:{
+            type: DataTypes.STRING,
+            allowNull: true
         }
     },{
         timestamps: false
