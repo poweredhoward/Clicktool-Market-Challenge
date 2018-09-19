@@ -16,7 +16,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "dialect": "mariadb",
-    "use_env_variable": "JAWSDB_URL"
+    "username": "v3x9vr1brhefxql5",
+    "password": "vwlipotohz07rs8j",
+    "database": "w86y7iya470iwia0",
+    "host": "w29ifufy55ljjmzq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "dialect": "mariadb"
   }
 }
