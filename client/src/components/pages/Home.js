@@ -13,8 +13,8 @@ class Home extends React.Component{
     }
 
     styling={
-        maxWidth: "300px",
-        maxHeight: "300px"
+        maxWidth: "500px",
+        maxHeight: "500px"
 
     }
 

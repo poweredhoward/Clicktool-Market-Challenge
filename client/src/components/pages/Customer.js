@@ -13,6 +13,12 @@ class Customer extends React.Component{
         clickInfo: []
     }
     
+    styling={
+        maxWidth: "500px",
+        maxHeight: "500px"
+
+    }
+
     componentDidMount = () =>{
         const browser = detect();
         console.log(browser);
@@ -47,7 +53,7 @@ class Customer extends React.Component{
                 <h1>{this.state.item.name}</h1>
                 <h2>Description: {this.state.item.description}</h2>
                 <h3>${this.state.item.price}</h3>
-                <img src={this.state.item.image} />
+                <img style={this.styling} src={"/" + this.state.item.image} />
                 <details>
                     <summary>
                         See click data for this product
