@@ -21,6 +21,6 @@
     "database": "w86y7iya470iwia0",
     "host": "w29ifufy55ljjmzq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
-    "dialect": "mariadb"
+    "dialect": "mysql"
   }
 }
