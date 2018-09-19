@@ -24,9 +24,19 @@ module.exports = function(sequelize, DataTypes){
             type: DataTypes.STRING,
             allowNull: true
         }
+        
     },{
         timestamps: false
     });
+
+    Item.associate = function(models){
+        Item.hasMany(models.Click, {
+            onDelete: "cascade",
+            name: "ItemId"
+        })
+    }
+
+
 
     return Item;
 }

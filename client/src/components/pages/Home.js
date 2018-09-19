@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Customer from "../pages/Customer";
 import Seller from "../pages/Seller";
 
+
+
 class Home extends React.Component{
 
     state={
@@ -17,6 +19,7 @@ class Home extends React.Component{
     }
 
     componentDidMount =() =>{
+ 
         axios.get("/api/all/items").then( items => {
             console.log(items);
             this.setState({
@@ -32,7 +35,8 @@ class Home extends React.Component{
             pathname:`/customer/${item.name}`,
             name: item.name,
             description: item.description,
-            price: item.price
+            price: item.price,
+            image: item.image
             // clickpoints: this.props.clickpoints,
         }
     }
